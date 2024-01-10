@@ -256,6 +256,7 @@ body {
     max-width: 800px;
     flex-wrap: wrap;
     margin: 120px auto 30px auto;
+    padding: 10px;
 }
 .copy {
     width: 100%;
@@ -271,11 +272,6 @@ body {
     margin-inline: 10px;
 }
 
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-
- }
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) { 
@@ -310,6 +306,7 @@ body {
 
     .token-img {
         max-width: 240px !important;
+        right: -4% !important;
     }
 
     .token {
@@ -331,6 +328,6 @@ body {
     .token-img {
         max-width: 350px;
         top:-300px;
-        right: -10%;
+        right: -12%;
     }
   }
