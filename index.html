@@ -9,9 +9,9 @@
 </head>
 <body>
    
-    <header id="header">
+    <header id="header" class="navbar-bg">
         <div class="container">
-            <nav class="navbar navbar-expand-md">
+            <nav class="navbar navbar-expand-md py-2">
                 <a class="navbar-brand" href="#"><div class="logo"><img src="images/logo.png" alt="logo"></div></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon toggler"> <i class="fa fa-bars"></i> </span>
@@ -29,15 +29,15 @@
         </div>
 
     </header>
+    
+    <!-- Banner -->
+    <section id="banner">
+        <div class="container">
+            <img src="images/banner.png" alt="banner">
+        </div>
+    </section>
 
     <div class="container">
-
-        <!-- Heading -->
-    
-        <!-- Banner -->
-        <section id="banner">
-            <img src="images/banner.png" alt="banner">
-        </section>
     
         <!-- About -->
         <section id="about">
@@ -57,9 +57,9 @@
 
             <!-- Social Links -->
             <div class="socials">
-                <a href="" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="" class="social-link"><i class="fa-brands fa-youtube"></i></a>
-                <a href="" class="social-link"><i class="fa-brands fa-telegram"></i></a>            
+                <a href="https://twitter.com/MonopolyGO_BSC" class="social-link" target="_blank" ><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://youtube.com/@MonopolyGO-BSC" class="social-link" target="_blank" ><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://t.me/MonopolyGO_BSC" class="social-link" target="_blank" ><i class="fa-brands fa-telegram"></i></a>            
             </div>
         </section>
             
@@ -101,7 +101,7 @@
                         <p class="mb-1 mt-4">Buy Tax 4% | Sell Tax 4% | Transfer 0%</p>
                         <ul class="pl-4">
                             <li>1% Reflection in native token</li>
-                            <li>1% Auto Buyback</li>
+                            <li>1% Buyback</li>
                             <li>2% Marketing</li>
                         </ul>
                     </div>
@@ -306,12 +306,25 @@
 
 
         <div class="socials mx-md-auto mt-3">
-            <a href="" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="" class="social-link"><i class="fa-brands fa-youtube"></i></a>
-            <a href="" class="social-link"><i class="fa-brands fa-telegram"></i></a>            
+            <a href="https://twitter.com/MonopolyGO_BSC" class="social-link" target="_blank" ><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://youtube.com/@MonopolyGO-BSC" class="social-link" target="_blank" ><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://t.me/MonopolyGO_BSC" class="social-link" target="_blank" ><i class="fa-brands fa-telegram"></i></a>                      
         </div>
     </footer>
 
+    <script>
+        
+        const header = document.querySelector("header")
+          document.body.onscroll = () => {
+  
+            if (document.body.scrollTop == 0  ) {
+                header.classList.remove('navbar-bg')
+            } else {
+                header.classList.add('navbar-bg')
+            }
+
+                }
+    </script>
 
  
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
