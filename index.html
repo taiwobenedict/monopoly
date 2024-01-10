@@ -8,25 +8,31 @@
     <title>Monopoly</title>
 </head>
 <body>
+   
+    <header id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-md">
+                <a class="navbar-brand" href="#"><div class="logo"><img src="images/logo.png" alt="logo"></div></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon toggler"> <i class="fa fa-bars"></i> </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav ml-auto">
+                    <a href="#mission" class="nav-link">MISSION</a>
+                    <a href="#tokenomics" class="nav-link">TOKENOMICS</a>
+                    <a href="#roadmap" class="nav-link">ROADMAP</a>
+                </div>
+                <!-- Whitpaper -->
+                    <a href="#" class="whitepaper nav-link ml-4">WHITEPAPER</a>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
     <div class="container">
 
         <!-- Heading -->
-        <header id="header">
-            <!-- Logo -->
-            <div class="logo"><img src="images/logo.png" alt="logo"></div>
-            <div class="d-flex flex-wrap">
-                <!-- Navigations -->
-                <nav class="nav-links d-flex">
-                    <a href="#" class="nav-link">MISSION</a>
-                    <a href="#" class="nav-link">TOKENOMICS</a>
-                    <a href="#" class="nav-link">ROADMAP</a>
-                </nav>
-    
-                <!-- Whitpaper -->
-                <a href="#" class="whitepaper nav-link ml-4">WHITEPAPER</a>
-            </div>
-    
-        </header>
     
         <!-- Banner -->
         <section id="banner">
@@ -84,25 +90,29 @@
             <div id="tokenomics">
                 <h1 class="heading">TOKENOMICS</h1>
 
-                <div class="position-relative token">
-                    <div class="text-left sub-heading">
-                        <p>Project name: Monopoly Go</p>
-                        <p> Symbol: $GO</p>
-                        <p>Total Supply: 100,000,000</p>
+                <div class="token">
+                    <div>
+                        <div class="text-left sub-heading">
+                            <p>Project name: Monopoly Go</p>
+                            <p> Symbol: $GO</p>
+                            <p>Total Supply: 100,000,000</p>
+                        </div>
+        
+                        <p class="mb-1 mt-4">Buy Tax 4% | Sell Tax 4% | Transfer 0%</p>
+                        <ul class="pl-4">
+                            <li>1% Reflection in native token</li>
+                            <li>1% Auto Buyback</li>
+                            <li>2% Marketing</li>
+                        </ul>
                     </div>
-    
-                    <p class="mb-1 mt-4">Buy Tax 4% | Sell Tax 4% | Transfer 0%</p>
-                    <ul class="pl-4">
-                        <li>1% Reflection in native token</li>
-                        <li>1% Auto Buyback</li>
-                        <li>2% Marketing</li>
-                    </ul>
+                    <div class="position-relative ">
+                            <div class="token-img"><img src="images/tokenomics-img.png" alt=""></div>
+                    </div>
+                    
                 </div>
 
-                <h3 class="sub-heading text-center w-100 position-relative token" >Token Allocation</h3>
-                <div class="position-relative ">
-                        <div class="token-img"><img src="images/tokenomics-img.png" alt=""></div>
-                </div>
+
+                <h3 class="sub-heading text-center w-100" >Token Allocation</h3>
                 <div class="chart">
                     <img src="images/chart.png" alt="">
                 </div>
@@ -290,8 +300,8 @@
 
         <div class="copy d-flex align-items-center justify-content-between mt-3">
             <small>© 2021 Flex. All rights reserved</small>
-            <small>PRIVACY POLICY</small>
-            <small>TERMS OF USE</small>
+            <small> <a href="#" class="underline">POLICY</a></small>
+            <small> <a href="#" class="underline">TERMS OF USE</a></small>
         </div>
 
 
@@ -304,6 +314,7 @@
 
 
  
-
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
 </html>

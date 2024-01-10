@@ -23,7 +23,9 @@ img {
       3px -3px 0 var(--pri-color);
 }
 
-
+html {
+  scroll-behavior: smooth !important;
+}
 
 
 /* Font */
@@ -41,16 +43,16 @@ body {
   overflow-x: hidden;
 }
 
-#header {
-  margin: 44px 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(5px);
+  background-color: var(--background-color);
 }
 
-.nav-links {
-  background-color: var(--light-color);
+.navbar-nav {
+  background-color: var(--light-color) !important;
   border-radius: 79px;
   padding: 10px 20px;
 }
@@ -79,6 +81,14 @@ body {
 
 .whitepaper:hover {
   transform: scale(1.05);
+}
+
+.toggler {
+  color: var(--pri-color);
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Banner */
@@ -260,7 +270,7 @@ body {
 }
 .copy {
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
 }
 
 .footer .socials {
@@ -273,20 +283,16 @@ body {
 }
 
 
+.underline {
+  color: var(--pri-color);
+  text-decoration: underline;
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) { 
     body {
         font-size: 14px;
     }
-
-    header, .logo ~ .d-flex{
-        justify-content: center !important;
-    }
-    
-    .logo, .nav-links {
-        margin-bottom: 1rem;
-    }
-
     .about-img {
         max-width: 400px;
     }
@@ -309,10 +315,6 @@ body {
         right: -4% !important;
     }
 
-    .token {
-        z-index: 1;
-    }
-
     .dice {
         bottom: -230px;
     }
@@ -321,6 +323,28 @@ body {
         justify-content: center;
     }
     
+    .navbar-nav {
+      border-bottom-right-radius:0px ;
+      border-bottom-left-radius: 0px;
+    }
+
+    .navbar-collapse {
+      transition: 0.4s;
+    }
+
+    .whitepaper {
+      border-top-right-radius: 0px;
+      border-top-left-radius: 0px;
+    }
+
+    .whitepaper.nav-link {
+      margin-left: 0 !important;
+    }
+
+    .whitepaper:hover {
+      transform: scale(1);
+      color: var(--light-color);
+    }
 
  }
 
@@ -329,5 +353,18 @@ body {
         max-width: 350px;
         top:-300px;
         right: -12%;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .token-img {
+      position: static !important;
+    }
+
+    .token {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
     }
   }
