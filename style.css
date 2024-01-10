@@ -1,0 +1,336 @@
+:root {
+  --pri-color: #005248;
+  --light-color: #fff;
+  --background-color: #f8d549;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.text-sec {
+    color: var(--background-color) !important;
+    text-shadow:
+      3px 3px 2px var(--pri-color),
+      -3px 3px 2px var(--pri-color),
+      -3px -3px 0 var(--pri-color),
+      3px -3px 0 var(--pri-color);
+}
+
+
+
+
+/* Font */
+@font-face {
+  font-family: "TuskerGrotesk";
+  src: url("fonts/TuskerGrotesk-6500Medium.otf");
+
+  /* Add more font properties if needed, like font-weight, font-style, etc. */
+}
+
+body {
+  font-family: "TuskerGrotesk", sans-serif !important;
+  background-color: var(--background-color);
+  color: var(--pri-color);
+  overflow-x: hidden;
+}
+
+#header {
+  margin: 44px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-links {
+  background-color: var(--light-color);
+  border-radius: 79px;
+  padding: 10px 20px;
+}
+
+.nav-link {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--pri-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.nav-link:hover {
+  color: var(--background-color);
+}
+
+.whitepaper {
+  background-color: var(--pri-color);
+  color: var(--background-color);
+  border-radius: 79px;
+  padding: 16px 24px;
+  min-width: 130.44px;
+  max-height: 57px;
+}
+
+.whitepaper:hover {
+  transform: scale(1.05);
+}
+
+/* Banner */
+#banner {
+  margin-top: 64px;
+  position: relative;
+}
+
+/* About */
+#about {
+  margin-top: 120px;
+}
+
+.about-img {
+  max-width: 500px;
+}
+
+.about-text {
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--pri-color);
+  font-size: 2.6rem;
+  line-height: 1.5;
+}
+
+/* Social */
+.socials {
+  margin: auto;
+  width: fit-content;
+  margin-top: 50px;
+}
+
+.fa-brands {
+  font-size: 2.2rem;
+  background-color: var(--light-color);
+  padding: 12px;
+  margin-inline: 1rem;
+  border-radius: 10px;
+  color: var(--pri-color);
+}
+
+.dark-bg {
+  border-radius: 1440px;
+  background: #d9ba40;
+  position: relative;
+  margin-top: 5rem;
+  padding-bottom: 100px;
+}
+
+/* Mission */
+.mission-img {
+    max-width: 400px;
+    position: relative;
+    height: 300px;
+   
+}
+
+.mission-img img {
+    position: absolute;
+    top: -50px;
+}
+
+#mission {
+    max-width: 1000px;
+    margin-inline: auto;
+
+}
+
+.heading {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-block: 3rem;
+}
+
+.sub-heading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+#mission .action {
+    max-width: 700px;
+    margin-top: 70px;
+    margin-inline: auto;
+}
+
+/* Tokenomics */
+#tokenomics {
+    margin-top: 170px;
+    position: relative;
+}
+
+.chart {
+    max-width: 800px;
+    margin-top: 50px;
+    margin-inline: auto;
+}
+
+.token-img {
+    position: absolute;
+    right: 0;
+    bottom: -250px;
+    max-width: 400px;
+
+}
+
+.dice {
+    max-width: 300px;
+    bottom: -20%;
+    right: 12%;
+    position: absolute;
+}
+
+/* Roadmap */
+#roadmap {
+    margin-top: 200px;
+}
+
+#roadmap .heading {
+    margin-bottom: 5rem;
+}
+
+.box {
+    border: solid 2px var(--pri-color);
+    padding: 20px;
+    position: relative;
+    background-color: var(--background-color);
+    margin-bottom: 3rem;
+}
+.box::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: solid 2px var(--pri-color);
+    top: 10px;
+    right: -10px;
+    z-index: -1;
+
+}
+
+.box .title {
+    flex: 1;
+    min-width: 102px;
+}
+
+.box ul {
+    list-style: none;
+    flex: 3;
+}
+
+.roadmap-img {
+    max-width: 370px;
+    margin-bottom: 3rem;
+}
+
+#how-to-buy {
+    margin-top: 180px;
+}
+
+#how-to-buy h3 {
+    flex: 1;
+    min-width: initial;
+}
+#how-to-buy p {
+  flex: 10;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    flex-wrap: wrap;
+    margin: 120px auto 30px auto;
+}
+.copy {
+    width: 100%;
+    max-width: 500px;
+}
+
+.footer .socials {
+    margin: 0;
+}
+.footer .fa-brands {
+    font-size: 1.3rem;
+    padding: 7px;
+    margin-inline: 10px;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+    body {
+        font-size: 14px;
+    }
+
+    header, .logo ~ .d-flex{
+        justify-content: center !important;
+    }
+    
+    .logo, .nav-links {
+        margin-bottom: 1rem;
+    }
+
+    .about-img {
+        max-width: 400px;
+    }
+
+    .about-text {
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+
+    .sub-heading {
+        font-size: 20px;
+    }
+
+    .token-img {
+        max-width: 240px !important;
+    }
+
+    .token {
+        z-index: 1;
+    }
+
+    .dice {
+        bottom: -230px;
+    }
+
+    .footer {
+        justify-content: center;
+    }
+    
+
+ }
+
+ @media (max-width: 992px) { 
+    .token-img {
+        max-width: 350px;
+        top:-300px;
+        right: -10%;
+    }
+  }
