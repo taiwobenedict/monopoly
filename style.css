@@ -393,11 +393,21 @@ header {
     .token-img {
       position: static !important;
     }
+    
+    .address {
+      max-width: 100%;
+    }
 
     .token {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .address {
+      max-width: 50%;
     }
   }
